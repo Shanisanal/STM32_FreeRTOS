@@ -6,3 +6,8 @@ Release/
 *.map
 *.o
 *.elf
+*.cproject
+*.mxproject
+*.project
+*.launch
+*.ld
