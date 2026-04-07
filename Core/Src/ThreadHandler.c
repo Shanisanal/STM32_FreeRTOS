@@ -107,8 +107,8 @@ void ThreadHandlerTransport(void* pArguments)
 	{
 		if (true == ThreadCoreQueueReceive(pstFromPollerQue, &stReceivedMsg, portMAX_DELAY))
 		{
-			printf("%s: Received Button ID %lu from Poller\r\n",TRANSPORT_THREAD,
-																stReceivedMsg.ulButtonId);
+			printf("%s: Received Button ID %lu from %s\r\n",TRANSPORT_THREAD,
+													stReceivedMsg.ulButtonId, POLLER_THREAD);
 			if (true == ThreadCoreSignalSemaphore(pstAckToPollerSem))
 			{
 
@@ -133,6 +133,7 @@ void ThreadHandlerTransport(void* pArguments)
 			else
 			{
 				printf("%s: Handshake ACK sent failed.\r\n",TRANSPORT_THREAD);
+
 			}
 
 		}
