@@ -28,7 +28,7 @@
 
 //******************************* ThreadHandlerPoller **************************
 //Purpose   : High-priority task that waits for a User Button interrupt.Processes
-//			  the hardware trigger and prepares data for the transport thread.
+//			  the hardware trigger and sends data queue to the transport thread.
 //Inputs    : pArguments - Pointer to task arguments .
 //Outputs   : None
 //Return    : None
