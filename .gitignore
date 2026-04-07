@@ -1,0 +1,8 @@
+.metadata/
+.settings/
+Debug/
+Release/
+*.list
+*.map
+*.o
+*.elf
